@@ -2,12 +2,15 @@ const express = require('express')
 const app = express()
 const config = require('./config.json')
 const bodyParser = require('body-parser')
-
+const shell = require('shelljs')
 
 app.use(bodyParser.json())
 
 app.post('/runscript', (req, res) => {
     if (req.body.token === config.token){
+        shell.ls('scripts/*.sh').forEach(file => {
+            shell.exec(file)
+        })
         res.send('OK')
     }
 });
