@@ -3,7 +3,10 @@ const app = express()
 const config = require('./config.json')
 const bodyParser = require('body-parser')
 const shell = require('shelljs')
+const helmet = require('helmet')
 
+
+app.use(helmet())
 app.use(bodyParser.json())
 
 app.post('/runscript', (req, res) => {
