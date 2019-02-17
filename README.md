@@ -1,7 +1,7 @@
 <h1 align="center">
   CDtool
 </h1>
-A tool for continuous delivery without giving away private certificates to run scripts.
+<p align="center">A tool for continuous delivery without giving away private certificates to run scripts.</p>
 
 <br/>
 
@@ -31,6 +31,7 @@ Place the scripts that must ran in the folder `/scripts`. Delete the scripts inc
 
 Start the server just by typing:
 >forever index.js &
+<br/>
 
 # Run the scripts
 Consume the service exposed by performing a POST request passing the token in the body of the request. 
