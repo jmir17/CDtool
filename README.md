@@ -30,7 +30,7 @@ In the file `config.json` the port of the server and the token asked in the requ
 Place the scripts that must ran in the folder `/scripts`. Delete the scripts included there. Notice that the order of execution is alphabetical.
 
 Start the server just by typing:
->forever index.js &
+>npm start
 <br/>
 
 # Run the scripts
