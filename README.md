@@ -16,10 +16,7 @@ CD tool exposes an API endpoint and runs the scripts prepared when is hit. This 
 
 In order to run this software, it is necessary to install [nodejs](https://nodejs.org/en/download/)
 
-<b>forever</b> to let the process run "forever":
->npm install forever -g
-
-and the <b>project dendencies</b> included in package.json:
+and the <b>project dendencies</b> included in package.json running:
 >npm i
 <br/>
 
